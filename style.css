@@ -1,12 +1,10 @@
-
 html {
   scroll-behavior: smooth; 
-  
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif; 
 }
 
 .container {
@@ -28,8 +26,12 @@ body {
   padding: 20px;
   color: white;
   box-sizing: border-box;
-  background: #398db3;
+  background: black; 
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
 }
 
 .photo {
@@ -39,6 +41,7 @@ body {
   object-fit: cover;
   border: 2px solid wheat;
   margin-bottom: 10px;
+ 
 }
 
 .right-block {
@@ -46,14 +49,15 @@ body {
   color: white;
   box-sizing: border-box;
   background: black; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
 }
 
-.left-block {
-  background: black; 
-}
 
 h1 {
   text-align: center;
+  margin-top: 0; 
 }
 h2 {
   font-size: 250%;
@@ -94,7 +98,9 @@ h6 {
 .skills {
   background-color: red;
   padding: 15px;
-  margin-top: 20px;
+  
+  margin-top: 20px; 
+  margin-bottom: 20px; 
 }
 h7 {
   font-size: 160%;
@@ -176,12 +182,11 @@ h8 {
   text-decoration: underline;
 }
 
-
 .navigation {
   background-color: #333; 
   padding: 15px;
   border-radius: 5px;
-  margin-top: 20px; 
+  margin-top: 60vh; 
 }
 
 .navigation h4 {
@@ -190,13 +195,10 @@ h8 {
   margin-bottom: 15px;
 }
 
-
-.navigation {
-  background-color: #333; 
-  padding: 15px;
-  border-radius: 5px;
-  
-  margin-top: 60vh; 
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navigation li {
@@ -218,4 +220,36 @@ h8 {
 .navigation a:hover {
   color: white; 
   text-decoration: underline; 
+}
+
+.rs-school-logo {
+  text-align: center; 
+  padding: 15px;
+  margin-top: auto; 
+}
+
+.rs-school-logo img {
+  max-width: 120px; 
+  height: auto;
+  display: block; 
+  margin: 0 auto; 
+}
+
+
+.github-logo {
+  text-align: center; 
+  padding: 15px;
+  margin-top: auto; 
+  
+}
+
+.github-logo img {
+  max-width: 60px; 
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+.photo {
+  justify-content: center;
 }
